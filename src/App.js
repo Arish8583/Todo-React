@@ -32,9 +32,8 @@ function App() {
       }
     };
 
-    setTimeout(() => {
       loadItems();
-    }, 1000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handlesubmit = async (e) => {
