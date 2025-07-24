@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
-import Header from "./Header";
+import Header from "./Layout/Header";
 import './App.css';
-import Content from "./Content";
-import Footer from "./Footer";
-import AddItem from "./AddItem";
-import SearchItem from "./SearchItem";
+import Content from "./Layout/Content";
+import Footer from "./Layout/Footer";
+import AddItem from "./Components/AddItem";
+import SearchItem from "./Components/SearchItem";
 import {
   fetchItems as firebaseFetch,
   addItem as firebaseAdd,
   deleteItem as firebaseDelete,
   toggleChecked as firebaseToggle
-} from './firebaseService';
+} from './Firebase/firebaseService';
 
 function App() {
   const [items, SetItems] = useState([]);
